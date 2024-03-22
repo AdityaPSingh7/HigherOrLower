@@ -17,9 +17,9 @@ while kplay:
     b=random.randint(0, len(data)-1)
   if a==b:
     continue
-  print(f"Compare A: {data[a]['name']}, {data[a]['description']}, from {data[a]['country']}")
+  print(f"Compare A: {data[a]['name']}, a {data[a]['description']}, from {data[a]['country']}")
   print(art.vs)
-  print(f"Against B: {data[b]['name']}, {data[b]['description']}, from {data[b]['country']}")
+  print(f"Against B: {data[b]['name']}, a {data[b]['description']}, from {data[b]['country']}")
   inp=input("Who has more followers? Type 'A' or 'B': ").lower()
   clear()
   print(art.logo)
