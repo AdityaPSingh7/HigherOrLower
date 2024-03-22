@@ -11,8 +11,10 @@ kplay=True
 print()
 a=random.randint(0, len(data)-1)
 b=random.randint(0, len(data)-1)
-while kplay:
 
+while kplay:
+  while b==a:
+    b=random.randint(0, len(data)-1)
   if a==b:
     continue
   print(f"Compare A: {data[a]['name']}, {data[a]['description']}, from {data[a]['country']}")
@@ -34,7 +36,6 @@ while kplay:
     score+=1
     print(f"You're right! Current score: {score}.")
     a=b
-    b=random.randint(0, len(data)-1)
   
     
     
